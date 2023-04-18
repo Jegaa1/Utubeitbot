@@ -26,3 +26,7 @@ six==1.16.0
 TgCrypto==1.2.2
 uritemplate==3.0.1
 urllib3==1.26.7
+
+Flask==2.2.2
+gunicorn==20.1.0
+aiohttp==3.8.1
