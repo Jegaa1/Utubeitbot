@@ -3,19 +3,19 @@ import os
 
 class Config:
 
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
+    BOT_TOKEN = "6240552623:AAG8Jj0rOytCH5B0BUeSWArALHECas_HGdU"
 
     SESSION_NAME = ":memory:"
 
-    API_ID = int(os.environ.get("API_ID"))
+    API_ID = 1923471
 
-    API_HASH = os.environ.get("API_HASH")
+    API_HASH = "fcdc178451cd234e63faefd38895c991"
 
-    CLIENT_ID = os.environ.get("CLIENT_ID")
+    CLIENT_ID = "120733850121-1p8qhnr7rd6fa5q0ogi4gp3ob0o25o7k.apps.googleusercontent.com"
 
-    CLIENT_SECRET = os.environ.get("CLIENT_SECRET")
+    CLIENT_SECRET = "XXCO5muxHs_vvo7cRpwoyEf9"
 
-    BOT_OWNER = int(os.environ.get("BOT_OWNER"))
+    BOT_OWNER = 880087645
 
     AUTH_USERS_TEXT = os.environ.get("AUTH_USERS", "")
 
@@ -39,7 +39,7 @@ class Config:
 
     DEBUG = bool(os.environ.get("DEBUG"))
 
-    UPLOAD_MODE = os.environ.get("UPLOAD_MODE") or False
+    UPLOAD_MODE = os.environ.get("UPLOAD_MODE", "public") or False
     if UPLOAD_MODE:
         if UPLOAD_MODE.lower() in ["private", "public", "unlisted"]:
             UPLOAD_MODE = UPLOAD_MODE.lower()
